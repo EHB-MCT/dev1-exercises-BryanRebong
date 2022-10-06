@@ -63,8 +63,7 @@ function drawLine() {
    context.lineTo(575, 250);
    context.lineTo(575, 50);
    context.lineTo(650, 250);
-   context.lineTo(645, 50);
-
+   context.lineTo(650, 40);
    context.stroke();
 
 
