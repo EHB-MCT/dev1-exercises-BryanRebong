@@ -9,47 +9,54 @@ drawRect();
 
 function drawRect() {
 
+// Top left white square
     context.lineWidth = 1;
     context.strokeStyle = 'red';
     context.beginPath();
-    context.rect(50, 50, 175, 175);
+    context.rect(50, 50, 150, 150);
     context.stroke();
 
+// Bottom right white square
     context.lineWidth = 1;
     context.strokeStyle = 'red';
     context.beginPath();
-    context.rect(225, 225, 175, 175);
+    context.rect(200, 200, 150, 150);
     context.stroke();
 
+// Middle black square
     context.lineWidth = 1;
     context.fillStyle = "black";
     context.beginPath();
-    context.rect(135, 135, 175, 175);
+    context.rect(125, 125, 150, 150);
     context.fill();
     context.stroke();
 
+// Top right white square
     context.lineWidth = 1;
     context.strokeStyle = 'red';
     context.beginPath();
-    context.rect(310, 85, 50, 50);
+    context.rect(275, 75, 50, 50);
     context.stroke();
 
+// Bottom left white square
     context.lineWidth = 1;
     context.strokeStyle = 'red';
     context.beginPath();
-    context.rect(85, 310, 50, 50);
+    context.rect(75, 275, 50, 50);
     context.stroke();
 
+// Top right black square
     context.lineWidth = 1;
     context.fillStyle = "black";
     context.beginPath();
-    context.rect(360, 50, 35, 35);
+    context.rect(325, 50, 25, 25);
     context.fill();
 
+// Bottom left black square
     context.lineWidth = 1;
     context.fillStyle = "black";
     context.beginPath();
-    context.rect(50, 360, 35, 35);
+    context.rect(50, 325, 25, 25);
     context.fill();
     
     
