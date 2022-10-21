@@ -14,8 +14,8 @@ function draw() {
 
 function drawCross() {
     let i = 5;
-    while (150>i<250) { 
-        let step = 5 * i;
+    while (i<11) { 
+        let step = 50 + (20 * i);
         Utils.drawLine(50, step, 350, step);
         Utils.drawLine(step, 50, step, 350);
         i = i + 1;
