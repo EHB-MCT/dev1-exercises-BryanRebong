@@ -10,6 +10,6 @@ export function drawLine(x1, y1, x2, y2) {
 }
 
 export function rgb(r, g, b) {
-    let rbg = "rgb(" + r + "," + g + "," + b +")";
+    let rgb = "rgb(" + r + "," + g + "," + b +")";
     return rgb;
 }
