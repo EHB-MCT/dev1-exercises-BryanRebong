@@ -28,7 +28,7 @@ function drawLine () {
     for (let i = 0; i < horizontalLines; i++) {
         Utils.drawLine(0 + (step * i), 0, width - (step * i), height );
     }
-    for (let i = 0; i < verticalLines; i++) {
+    for (let i = 0; i <= verticalLines; i++) {
         Utils.drawLine(0, 0 + (step * i), width , height - (step * i));
     }
 }
