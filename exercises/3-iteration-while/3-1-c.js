@@ -13,11 +13,11 @@ function draw() {
 }
 
 function drawCross() {
-    let i = 0;
-    while (i < 50) { 
-        let step =  50 + (50 + i);
+    let i = 5;
+    while (i<11) { 
+        let step = 50 + (20 * i);
         Utils.drawLine(50, step, 350, step);
         Utils.drawLine(step, 50, step, 350);
-        i = i + 50;
+        i = i + 1;
     }
 }
