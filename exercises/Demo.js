@@ -1,24 +1,42 @@
 "use strict";
 
-let canvas = document.querySelector("canvas");
-   canvas.width = window.innerWidth;
-   canvas.height = window.innerHeight;
-   let context = canvas.getContext("2d");
+import context from "../../scripts/context.js";
+import * as Utils from "../../scripts/utils.js";
+
+let width = context.canvas.width;
+let height = context.canvas.height;
+
+let bubblePosX = [0];
+let bubblePosY = [0];
+let counter = 0;
 
 draw();
 
 function draw() {
-    let i = 0;
-    let step = 200
-    let margin = 100
-    while (i < 5){
-        context.beginPath();
-        context.ellipse (300 + margin + (i * step), 100, 100, 0, 0, Math.PI*2);
-        context.fill;
-
-        console.log ("loop", i);
-        i++;
-    }
-
-    console.log ("after loop");
+    drawBubbles();
 }
+
+function drawBubbles() {
+    context.beginPath();
+    context.arc(100, 75, 50, 0, 2 * Math.PI);
+    context.fillStyle = '#00bfff';
+    context.fill();
+    counter++;
+    
+    if(counter==7) {
+    bubblePosX = append(bubblePosX, Math.random(0, width));
+    bubblePosY = append(bubblePosY, -10);
+    counter %= 7;
+}
+    
+    for (let i=0; i < bubblePosX.length; i++) {
+    circle(bubblePosX[i],bubblePosY[i],20);
+}
+
+    for (let i=0; i<bubblePosX.length;i++) {
+    bubblePosY[i]+= 1;
+}
+
+}
+
+
