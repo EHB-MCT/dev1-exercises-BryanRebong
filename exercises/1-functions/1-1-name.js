@@ -8,64 +8,52 @@ let context = canvas.getContext("2d");
 drawLine();
 
 function drawLine() {
-   context.lineWidth = 5;
-   context.strokeStyle = 'blue';
+   //Letter "B"
    context.beginPath();
    context.moveTo(50, 50);
+   context.lineTo(50, 250);
+   context.moveTo(50, 50);
    context.lineTo(150, 50);
-   context.lineTo(150, 150);
-   context.lineTo(100, 150);
-   context.lineTo(175, 150);
+   context.lineTo(150, 125);
+   context.lineTo(175, 125);
    context.lineTo(175, 250);
    context.lineTo(50, 250);
-   context.lineTo(50, 50);
    context.stroke();
 
-   context.lineWidth = 5;
-   context.strokeStyle = 'red';
+   //Letter "R"
    context.beginPath();
-   context.moveTo(200, 50);
-   context.lineTo(300, 50);
-   context.lineTo(300, 150);
-   context.lineTo(250, 150);
-   context.lineTo(300, 250);
-   context.lineTo(250, 150);
-   context.lineTo(200, 150);
-   context.lineTo(200, 50);
+   context.moveTo(200, 125);
    context.lineTo(200, 250);
+   context.moveTo(200, 150);
+   context.lineTo(250, 150);
+   context.lineTo(265, 165);
    context.stroke();
 
-   context.lineWidth = 5;
-   context.strokeStyle = 'yellow';
+   //Letter "Y"
    context.beginPath();
-   context.moveTo(350, 50);
-   context.lineTo(400, 150);
-   context.lineTo(400, 250);
-   context.lineTo(400, 150);
-   context.lineTo(450, 50);
+   context.moveTo(300, 175);
+   context.lineTo(300, 250);
+   context.moveTo(300, 175);
+   context.lineTo(275, 150);
+   context.moveTo(300, 175);
+   context.lineTo(325, 150);
    context.stroke();
 
-   context.lineWidth = 5;
-   context.strokeStyle = 'green';
+   //Letter "A"
    context.beginPath();
-   context.moveTo(500, 50);
-   context.lineTo(550, 250);
-   context.lineTo(500, 50);
+   context.moveTo(375, 150);
+   context.lineTo(325, 250);
+   context.moveTo(375, 150);
+   context.lineTo(425, 250);
+   context.stroke();
+
+   //Letter "N"
+   context.beginPath();
+   context.moveTo(450, 150);
    context.lineTo(450, 250);
-   context.lineTo(481, 125);
-   context.lineTo(520, 125);
+   context.moveTo(450, 150);
+   context.lineTo(500, 250);
+   context.lineTo(500, 150);
    context.stroke();
-
-   context.lineWidth = 5;
-   context.strokeStyle = 'orange';
-   context.beginPath();
-   context.moveTo(575, 50);
-   context.lineTo(575, 250);
-   context.lineTo(575, 50);
-   context.lineTo(650, 250);
-   context.lineTo(650, 40);
-   context.stroke();
-
-
 }
 
