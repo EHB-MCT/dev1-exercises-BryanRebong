@@ -8,17 +8,13 @@ let context = canvas.getContext("2d");
 let width = context.canvas.width;
 let height = context.canvas.height;
 
-let margin = 50;
+let margin = 250;
 
 drawLines();
 
-
-
 function drawLines() {
     context.beginPath();
-
     context.lineWidth = 2;
-
     context.moveTo(margin, 50);
     context.lineTo(width - margin, 50);
     context.lineTo(margin, 100);
@@ -29,5 +25,4 @@ function drawLines() {
     context.lineTo(width - margin, 200);
     context.lineTo(margin, 50);
     context.stroke();
-
 }
