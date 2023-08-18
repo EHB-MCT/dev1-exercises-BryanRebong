@@ -34,4 +34,21 @@ function calculateAverage(listOfNumbers){
 }
 
 
+@param  {MouseEvent} eventData 
+
+function changeSpeed(eventData) {
+   mouseHue = eventData.pageX / width * 360;
+
+}
+
+//CHATGPT//
+let speedFactor = event.clientX / canvas.width;
+for (let i = 0; i < balls.length; i++) {
+let ball = balls[i];
+ball.speed = ball.speed + speedFactor;
+}
+
+
+
+
 
